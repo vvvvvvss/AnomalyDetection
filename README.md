@@ -26,3 +26,21 @@ One of the most widely used algorithms for anomaly detection is the Local Outlie
 This algorithm uses the local density of points in a dataset to identify anomalies. 
 The basic idea is that, in most datasets, the density of points is relatively uniform, with only a few points having significantly lower or higher densities than the rest. 
 The LOF algorithm uses this property to identify points that have a significantly lower density than their neighbors, which are likely to be anomalies.
+
+## Isolation Forest algorithm
+Another popular algorithm for anomaly detection is the Isolation Forest algorithm
+This algorithm uses decision trees to identify anomalies, by isolating points that are difficult to reach in the decision tree. 
+The basic idea is that, in most datasets, the majority of points can be reached in the decision tree with only a few splits. 
+Anomalies, on the other hand, are typically isolated from the rest of the data, requiring many splits to reach them in the decision tree. 
+The Isolation Forest algorithm uses this property to identify anomalies by isolating points that are difficult to reach in the decision tree.
+
+## Support Vector Machines (SVMs)
+One-class Support Vector Machines (SVMs) are another popular approach to anomaly detection. This algorithm uses support vector machines to learn a decision boundary that separates the majority of the data from the anomalies. 
+The basic idea is that, in most datasets, the majority of points belong to a single cluster, while anomalies form a separate cluster. 
+The One-class SVM algorithm uses this property to learn a decision boundary that separates the majority of the data from the anomalies, and uses this boundary to identify points that are likely to be anomalies.
+
+## Elliptic Envelope algorithm 
+Elliptic Envelope algorithm is another approach to anomaly detection that assumes that the data is normally distributed. 
+This algorithm fits an ellipse around the data, and identifies points that fall outside of the ellipse as anomalies. 
+The basic idea is that, in a normally distributed dataset, most of the points will fall within the ellipse, while anomalies will fall outside of it. 
+The Elliptic Envelope algorithm uses this property to identify anomalies by fitting an ellipse around the data and identifying points that fall outside of it.
